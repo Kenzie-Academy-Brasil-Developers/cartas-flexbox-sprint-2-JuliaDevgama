@@ -55,6 +55,8 @@ html {
     border-radius: 4px;
     overflow: hidden;
     display: flex;
+    width: 710px;
+
   }
   
     .cardGroup__card {
@@ -69,7 +71,6 @@ html {
   
     .cardGroup__card {
       border-left: 1px solid #D7DBDD;
-      width: 710px;
     }
   
     .cardGroup__cardDescription {
