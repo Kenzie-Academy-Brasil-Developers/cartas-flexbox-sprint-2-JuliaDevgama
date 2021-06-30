@@ -69,6 +69,7 @@ html {
   
     .cardGroup__card {
       border-left: 1px solid #D7DBDD;
+      width: 710px;
     }
   
     .cardGroup__cardDescription {
