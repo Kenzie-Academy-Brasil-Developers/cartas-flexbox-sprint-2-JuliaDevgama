@@ -1,10 +1,12 @@
-
+/* Julia, é preciso alinhar o box das cartas horizontalmente e também ajustar a largura do box para versão mobile de acordo com as instruções da atividade*/
 html {
     font-family: "Raleway", "Helvetica", sans-serif;
     font-weight: 400;
     color: #2F3442;
+    width: 100%;
     height: 100%;
     background-color: #FFFFFF;
+    margin: 0;
 }
 
 .icon {color: #BCD2DA;}
@@ -55,8 +57,7 @@ html {
     border-radius: 4px;
     overflow: hidden;
     display: flex;
-    width: 710px;
-
+    max-width: 320px;
   }
   
     .cardGroup__card {
@@ -64,9 +65,10 @@ html {
   
       border: none;
       border-radius: 0;
-      flex-grow: 1;
-      flex-shrink: 0;
-      flex-basis: 200px;
+      flex-grow: 2;
+      flex-shrink:1;
+      flex-basis: auto;
+      
     }
   
     .cardGroup__card {
@@ -75,7 +77,12 @@ html {
   
     .cardGroup__cardDescription {
       /* flex-grow, flex-shrink, flex-basis */
-      flex:1 1 50%;
-      
+      flex-grow: 1;
+      flex-shrink: 3;
+      flex-basis : auto;
     }
-  
+@media (min-width: 768px){
+  .cardGroup{
+    max-width: 710px;
+  }
+}
