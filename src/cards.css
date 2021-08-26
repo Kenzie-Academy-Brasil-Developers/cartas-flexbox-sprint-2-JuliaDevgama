@@ -1,14 +1,14 @@
-/* Julia, é preciso alinhar o box das cartas horizontalmente e também ajustar a largura do box para versão mobile de acordo com as instruções da atividade*/
 html {
     font-family: "Raleway", "Helvetica", sans-serif;
     font-weight: 400;
     color: #2F3442;
-    width: 100%;
     height: 100%;
     background-color: #FFFFFF;
-    margin: 0;
 }
-
+body {
+  display: flex;
+  justify-content: center;
+}
 .icon {color: #BCD2DA;}
 
 .card {
@@ -18,6 +18,7 @@ html {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   
 }
 
@@ -25,9 +26,9 @@ html {
     /* display, flex-direction, justify-content, align-items */
     padding: 15px 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items:center;
-    flex-direction: column;
 
 }
 
@@ -52,13 +53,12 @@ html {
 
 .cardGroup {
     /* display */
-  
+    max-width: 710px;
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
     display: flex;
-    max-width: 320px;
-  }
+}
   
     .cardGroup__card {
       /* flex-grow, flex-shrink, flex-basis */
@@ -66,8 +66,8 @@ html {
       border: none;
       border-radius: 0;
       flex-grow: 2;
-      flex-shrink:1;
-      flex-basis: auto;
+      flex-shrink:2;
+      flex-basis: 33%;
       
     }
   
@@ -78,10 +78,10 @@ html {
     .cardGroup__cardDescription {
       /* flex-grow, flex-shrink, flex-basis */
       flex-grow: 1;
-      flex-shrink: 3;
+      flex-shrink: 1;
       flex-basis : auto;
     }
-@media (min-width: 768px){
+@media (min-width: 769px){
   .cardGroup{
     max-width: 710px;
   }
